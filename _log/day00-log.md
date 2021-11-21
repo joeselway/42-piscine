@@ -43,6 +43,8 @@ Log into Intra
 * Google how to set attributes on the symbolic link without changing the original
 * Google how to clone existing local data to a remote Git repo
 	* Failed at this and just moved files into empty clone
+	* Maybe try this later… 
+		* https://stackoverflow.com/questions/2411031/how-do-i-clone-into-a-non-empty-directory
 * 
 
  
