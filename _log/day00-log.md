@@ -2,7 +2,7 @@
 
 Log into Intra
 * Find first module PDF
-* Copy GitHub directory structure from OP GitHub
+* Copy GitHub directory structure from random person's GitHub
 * Start ex00
 *	Use vim to create file `vi z`
 *	`i` to insert
