@@ -1,5 +1,8 @@
 #Day 00
 
+* Links
+	* https://www.youtube.com/watch?v=a14XiTXjOow&list=PLVQYiy6xNUxxd5TiZL87_v6JOx61umsUz&index=1
+
 Log into Intra
 * Find first module PDF
 * Copy GitHub directory structure from random person's GitHub
