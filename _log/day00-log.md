@@ -47,6 +47,7 @@
 		* touch -a -m -t 202106012344.11 test5
 		* touch -a -m -t 202106012220.11 test6
 	* Google how to set attributes on the symbolic link without changing the original
+		* `touch` and `chmod` both accept `-h` as a switch to do this
 	* Google how to clone existing local data to a remote Git repo
 		* Failed at this and just moved files into empty clone
 		* Maybe try this later… 
