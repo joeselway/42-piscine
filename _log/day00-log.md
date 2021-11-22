@@ -16,8 +16,9 @@
 		* Use vim to create file `vi z`
 			* _Ed: You don't have to use `vim` AKA `vi` here, I'm just trying to practice vimskillz…_
 		* `i` to insert
-		* Enter Z
-		* Esc, :wq
+		* `Z`
+		* hit Escape to leave insert mode
+		* `:wq` to write&quit
 	* Start ex01
 		* To create a file exactly 40 bytes
 			* dd if=/dev/zero of=testShell00 bs=40 count=1
