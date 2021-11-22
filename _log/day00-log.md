@@ -34,7 +34,7 @@
 		* ln -s test0 test6
 		* chmod 715 test0
 		* chmod 714 test1
-		* chmod 604 test2
+		* chmod 504 test2
 		* chmod 404 test3
 		* chmod 641 test4
 		* chmod -h 777 test6
@@ -44,8 +44,15 @@
 		* touch -a -m -t 202106012344.11 test3
 		* touch -a -m -t 202106012343.11 test4
 		* touch -a -m -t -h 202106012220.11 test6
-	* Google how to set attributes on the symbolic link without changing the original
-		* `touch` and `chmod` both accept `-h` as a switch to do this
+		* Google how to set attributes on the symbolic link without changing the original
+			* `touch` and `chmod` both accept `-h` as a switch to do this
+	* Start ex03
+		* Fortunately I know klist command well…
+		* run: klist
+			* check that you have some output, if not run `kinit` and log in with your 42 account
+		* once you have a result from `klist`:
+			* `klist > klist.txt`
+			* `cat klist.txt` to make sure it containts the output of `klist`
 	* Google how to clone existing local data to a remote Git repo
 		* Failed at this and just moved files into empty clone
 		* Maybe try this later… 
