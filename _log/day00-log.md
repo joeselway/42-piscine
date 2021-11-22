@@ -24,7 +24,7 @@
 				* `dd` is a command that copies disk blocks
 				* `man dd`!!!!!!
 				* `if=` and `of=` specify input and output files
-				* `/dev/zero` is a special UNIX file that is just a stream of endless zeroes that doesn't actually take up and disk space
+				* `/dev/zero` is a special UNIX file that is just a stream of endless zeroes that doesn't actually take up any disk space
 				* `bs=` sets a size in bytes to copy (this is how you "touch" a file with a specific size)
 		* To set mod date to Jun 1
 			* touch -a -m -t 202106012342.11 testShell00
