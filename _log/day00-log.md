@@ -57,6 +57,13 @@
 		* Stole another students answer - they used 4 flags for `ls` but the instructions state "What has not been asked for should not be done!", so I stripped it back to two:
 		* `ls -mt`
 		* what does this do? RTFM! = `man ls` and look for `-m`, `-t`
+	* Start ex05
+		* Googled this…
+			* `git log -n 5` to get last 5 commits
+			* add on `--format="%H"` to print out only the hash
+			* create 2 line file `git_commit.sh`
+				* `#/bin/sh` as this is the convention for starting a shell script
+				* `git log -n 5 --format="%H"`
 	* Google how to clone existing local data to a remote Git repo
 		* Failed at this and just moved files into empty clone
 		* Maybe try this later… 
