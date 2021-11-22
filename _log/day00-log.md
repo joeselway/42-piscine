@@ -25,27 +25,28 @@
 			* tar -cf testShell00.tar testShell00
 	* Start ex02
 		* Run commands…
-		* mkdir test0
-		* mkdir test2
-		* dd if=/dev/zero of=test1 bs=4 count=1
-		* dd if=/dev/zero of=test3 bs=1 count=1
-		* dd if=/dev/zero of=test4 bs=2 count=1
-		* ln test3 test5
-		* ln -s test0 test6
-		* chmod 715 test0
-		* chmod 714 test1
-		* chmod 504 test2
-		* chmod 404 test3
-		* chmod 641 test4
-		* chmod -h 777 test6
-		* touch -a -m -t 202106012047.11 test0
-		* touch -a -m -t 202106012146.11 test1
-		* touch -a -m -t 202106012256.11 test2
-		* touch -a -m -t 202106012344.11 test3
-		* touch -a -m -t 202106012343.11 test4
-		* touch -a -m -t -h 202106012220.11 test6
-		* Google how to set attributes on the symbolic link without changing the original
+			* mkdir test0
+			* mkdir test2
+			* dd if=/dev/zero of=test1 bs=4 count=1
+			* dd if=/dev/zero of=test3 bs=1 count=1
+			* dd if=/dev/zero of=test4 bs=2 count=1
+			* ln test3 test5
+			* ln -s test0 test6
+			* chmod 715 test0
+			* chmod 714 test1
+			* chmod 504 test2
+			* chmod 404 test3
+			* chmod 641 test4
+			* chmod -h 777 test6
+			* touch -a -m -t 202106012047.11 test0
+			* touch -a -m -t 202106012146.11 test1
+			* touch -a -m -t 202106012256.11 test2
+			* touch -a -m -t 202106012344.11 test3
+			* touch -a -m -t 202106012343.11 test4
+			* touch -a -m -t -h 202106012220.11 test6
+		* Googled how to set attributes on the symbolic link without changing the original
 			* `touch` and `chmod` both accept `-h` as a switch to do this
+		* 2nd column of `ls -l` shows number of hard links to file, which is the clue to do `link test3 test5`
 	* Start ex03
 		* Fortunately I know klist command well…
 		* run: klist
