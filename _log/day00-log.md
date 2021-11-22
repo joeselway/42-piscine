@@ -53,6 +53,10 @@
 		* once you have a result from `klist`:
 			* `klist > klist.txt`
 			* `cat klist.txt` to make sure it containts the output of `klist`
+	* Start ex04
+		* Stole another students answer - they used 4 flags for `ls` but the instructions state "What has not been asked for should not be done!", so I stripped it back to two:
+		* `ls -mt`
+		* what does this do? RTFM! = `man ls` and look for `-m`, `-t`
 	* Google how to clone existing local data to a remote Git repo
 		* Failed at this and just moved files into empty clone
 		* Maybe try this later… 
