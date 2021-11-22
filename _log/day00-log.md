@@ -1,10 +1,12 @@
 # Day 00
 
 * Links
+	* https://cdn.discordapp.com/attachments/910321983873499166/912137084511350826/vogsphere-doc.en.pdf
 	* playme video
 		* https://www.youtube.com/watch?v=a14XiTXjOow&list=PLVQYiy6xNUxxd5TiZL87_v6JOx61umsUz&index=1
 	* S-00 videos
 		* https://www.youtube.com/playlist?list=PLVQYiy6xNUxxhvwi0PGmXb5isUdVwmsg8
+		* 
 
 * Log into Intra
 	* Find first module PDF
