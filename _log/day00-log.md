@@ -92,7 +92,17 @@
 			* last bit is whatever description you want to define for matching this rule!
 * Start ex08
 	* I've used `find` a bunch, but I didn't know you could use `-or` to apply different actions to different matches!
-		*  find . -name "*~" -print -delete -or -name "#*#" -print -delete -or -name "#" -print -delete
+		*  `find . -name "*~" -print -delete -or -name "#*#" -print -delete -or -name "#" -print -delete`
+			* `-name` looks for a file matching a name, where * can be used as a wildcard to match anything (or nothing) in its place
+			* hence these patterns for 
+				* "ends in ~", 
+				* "starts and ends in #", 
+				* and the special edge case `#` which technically starts and ends with # but doesn't match `#*#` ;-)
+		* Tested by deleting a bunch of files matching those rules created with e.g. `touch "@~"` (using quotes around the special charactes we are searching for!)
+* Start ex07
+	* Followed the ingo in the photo of the whiteboard that Martin wrote on, and `man patch`
+	* `patch` and `diff` can be used respectively to create `b` from `a` + `sw.diff` and `sw.diff` from `a` + `b` respectively
+	* `a` and `sw.diff` are in the `resources.rar.gz` file on the project page on Intra!
 * Google how to clone existing local data to a remote Git repo
 	* Failed at this and just moved files into empty clone
 	* Maybe try this later… 
