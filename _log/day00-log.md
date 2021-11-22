@@ -11,10 +11,10 @@
 * Log into Intra
 	* Find first module PDF
 	* Copy GitHub directory structure from random person's GitHub
-		* Ed: This was before I knew to clone the project on Intra as the parent working dir for the assignment and its `ex00` etc. folders :) 
+		* _Ed: This was before I knew to clone the project on Intra as the parent working dir for the assignment and its `ex00` etc. folders :)_
 	* Start ex00
 		* Use vim to create file `vi z`
-			* Ed: You don't have to use `vim` AKA `vi` here, I'm just trying to practice that…
+			* _Ed: You don't have to use `vim` AKA `vi` here, I'm just trying to practice vimskillz…_
 		* `i` to insert
 		* Enter Z
 		* Esc, :wq
