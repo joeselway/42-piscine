@@ -54,7 +54,7 @@
 		* chmod 404 test3
 		* chmod 641 test4
 		* chmod -h 777 test6
-			* `-h` tells chmod (and touch) to edit _the symlink_, not the file it links to (i.e. `test0`)
+			* `-h` tells chmod (and touch) to edit *the symlink*, not the file it links to (i.e. `test0`)
 		* touch -a -m -t 202106012047.11 test0
 		* touch -a -m -t 202106012146.11 test1
 		* touch -a -m -t 202106012256.11 test2
