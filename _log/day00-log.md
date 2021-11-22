@@ -51,6 +51,14 @@
 		* Failed at this and just moved files into empty clone
 		* Maybe try this later… 
 			* https://stackoverflow.com/questions/2411031/how-do-i-clone-into-a-non-empty-directory
-	* 
+	* Watch 42 Git intro videos
+		* Commands covered…
+			* init
+			* add
+			* rm
+			* commit
+			* status
+			* diff
+		* 
 
  
