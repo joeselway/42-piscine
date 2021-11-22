@@ -1,0 +1,5 @@
+Credentials cache: API:82D45BA6-F601-4F2D-A5C8-D812B0DCF400
+        Principal: jselway@42ADEL.ORG.AU
+
+  Issued                Expires               Principal
+Nov 22 11:37:10 2021  Nov 22 21:37:10 2021  krbtgt/42ADEL.ORG.AU@42ADEL.ORG.AU
