@@ -11,35 +11,49 @@
 * Log into Intra
 	* Find first module PDF
 	* Copy GitHub directory structure from random person's GitHub
+		* Ed: This was before I knew to clone the project on Intra as the parent working dir for the assignment and its `ex00` etc. folders :) 
 	* Start ex00
 		* Use vim to create file `vi z`
+			* Ed: You don't have to use `vim` AKA `vi` here, I'm just trying to practice that…
 		* `i` to insert
 		* Enter Z
 		* Esc, :wq
 	* Start ex01
 		* To create a file exactly 40 bytes
 			* dd if=/dev/zero of=testShell00 bs=40 count=1
+				* `dd` is a command that copies disk blocks
+				* `man dd`!!!!!!
+				* `if=` and `of=` specify input and output files
+				* `/dev/zero` is a special UNIX file that is just a stream of endless zeroes that doesn't actually take up and disk space
+				* `bs=` sets a size in bytes to copy (this is how you "touch" a file with a specific size)
 		* To set mod date to Jun 1
 			* touch -a -m -t 202106012342.11 testShell00
+				* `man touch`!!!!!!
 		* To set perms
-			* chmod 455 testShell00
-	    * 	Tar per PDF
-			* tar -cf testShell00.tar testShell00
+			* `chmod 455 testShell00`
+	    * 	Tar per PDF instructions
+			* `tar -cf testShell00.tar testShell00`
 	* Start ex02
 		* Run commands…
-			* mkdir test0
-			* mkdir test2
-			* dd if=/dev/zero of=test1 bs=4 count=1
-			* dd if=/dev/zero of=test3 bs=1 count=1
-			* dd if=/dev/zero of=test4 bs=2 count=1
-			* ln test3 test5
-			* ln -s test0 test6
+			* `mkdir test0`
+			* `mkdir test2`
+				* Did you notice the `d` before the permissions on these files? 
+			* `dd if=/dev/zero of=test1 bs=4 count=1`
+			* `dd if=/dev/zero of=test3 bs=1 count=1`
+			* `dd if=/dev/zero of=test4 bs=2 count=1`
+				* See `ex01` for deets on `dd` or just `man dd`!!!!!!
+			* `ln test3 test5`
+				* Did you notice the `2` in the column between the permissions and the user for these files?
+					* I had to google this… turns out this is the number of links to the file… this was my clue to make a "hard link" with `ln`
+			* `ln -s test0 test6`
+				* The `->` in the `ls -l` output denotes a symbolic link	
 			* chmod 715 test0
 			* chmod 714 test1
 			* chmod 504 test2
 			* chmod 404 test3
 			* chmod 641 test4
 			* chmod -h 777 test6
+				* `-h` tells chmod (and touch) to edit _the symlink_, not the file it links to (i.e. `test0`)
 			* touch -a -m -t 202106012047.11 test0
 			* touch -a -m -t 202106012146.11 test1
 			* touch -a -m -t 202106012256.11 test2
