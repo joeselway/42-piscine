@@ -1,1 +1,2 @@
-ls -mt
+# apparently the stupid moulinette required `-U` and `-p` contrary to the instructions in the PDF…
+ls -tUpm
