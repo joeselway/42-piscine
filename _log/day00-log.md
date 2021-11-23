@@ -19,9 +19,9 @@
 	* `Z`
 	* hit Escape to leave insert mode
 	* `:wq` to write&quit
-* Start ex01
+* Start `ex01`
 	* To create a file exactly 40 bytes
-		* dd if=/dev/zero of=testShell00 bs=40 count=1
+		* `dd if=/dev/zero of=testShell00 bs=40 count=1`
 			* `dd` is a command that copies disk blocks
 			* `man dd`!!!!!!
 			* `if=` and `of=` specify input and output files
@@ -34,7 +34,7 @@
 		* `chmod 455 testShell00`
     * 	Tar per PDF instructions
 		* `tar -cf testShell00.tar testShell00`
-* Start ex02
+* Start `ex02`
 	* Run commands…
 		* `mkdir test0`
 		* `mkdir test2`
@@ -57,7 +57,7 @@
 			* `-h` tells chmod (and touch) to edit *the symlink*, not the file it links to (i.e. `test0`)
 		* touch -a -m -t 202106012047.11 test0
 		* touch -a -m -t 202106012146.11 test1
-		* touch -a -m -t 202106012256.11 test2
+		* touch -a -m -t 202106012245.11 test2
 		* touch -a -m -t 202106012344.11 test3
 		* touch -a -m -t 202106012343.11 test4
 		* touch -a -m -t -h 202106012220.11 test6
