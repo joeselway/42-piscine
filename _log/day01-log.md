@@ -17,3 +17,4 @@
       * I was looking at familiar tools like `cut` and `sed` so this was a good TIL!
     * Read `man tr` thoroughly and understood so that I'm not cheating!!
 * Start `ex02`
+  * 
