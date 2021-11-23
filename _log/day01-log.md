@@ -28,5 +28,11 @@
   * Mostly prefixing these with a `\` will work, but some of the characters are exceptions that don't need to be escaped
   * Messed around with escaping parts of the string until I found the patter:
     * `touch \"\\\?\$\*’MaRViN’\*\$\?\\\"`
-* 
+* Start `ex06`
+* Start `ex07`
+  * Geez this is getting ridiculous
+  * Stole someones answer: https://github.com/Caceresenzo/My-School-42-Piscine-Experience/blob/master/day01:%20C%20Piscine%20Shell%2001/ex07/r_dwssap.sh
+  * If I get time I will read and understand the funky `sed` sorcery but kinda who cares
+* Start `ex08`
+  * 
 
