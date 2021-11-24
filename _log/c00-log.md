@@ -22,5 +22,6 @@
             * What is a memory address? It is literally the address by which the computer can find the location in the computer's RAM where the data is stored
             * Within our C code, we are able to refer to this data in memory using a variable of the type `char`, but the operating system - macOS - doesn't know anything about our C variable. So, we have to send the system the _actual memory address_ where the data (our character) is stored.
           * `size_t nbytes`
-            * This tells the operating system how many bytes of memory starting from the memory address already given we should "write". As we are only looking to print one character – which is 1 byte in our 8 bit text encoding scheme (read on ASCII & UTF-8!) - so the value is simply 1.
+            * This tells the operating system how many bytes of memory starting from the memory address already given we should "write". As we are only looking to print one character – which is contained in exactly 1 byte in our 8-bit text encoding scheme (read on ASCII & UTF-8!) - so the value is simply 1.
 * Start `ex01`
+  * 
