@@ -12,7 +12,8 @@
 	* Find first module PDF
 	* Copy GitHub directory structure from random person's GitHub
 		* _Ed: This was before I knew to clone the project on Intra as the parent working dir for the assignment and its `ex00` etc. folders :)_
-* Start ex00
+* **The following exercises are in the wrong order, but they are all present…**
+* Start `ex00`
 	* Use vim to create file `vi z`
 		* _Ed: You don't have to use `vim` AKA `vi` here, I'm just trying to practice vimskillz…_
 	* `i` to insert
@@ -64,25 +65,25 @@
 	* Googled how to set attributes on the symbolic link without changing the original
 		* `touch` and `chmod` both accept `-h` as a switch to do this
 	* 2nd column of `ls -l` shows number of hard links to file, which is the clue to do `link test3 test5`
-* Start ex03
+* Start `ex03`
 	* Fortunately I know klist command well…
 	* run: klist
 		* check that you have some output, if not run `kinit` and log in with your 42 account
 	* once you have a result from `klist`:
 		* `klist > klist.txt`
 		* `cat klist.txt` to make sure it containts the output of `klist`
-* Start ex04
+* Start `ex04`
 	* Stole another students answer - they used 4 flags for `ls` but the instructions state "What has not been asked for should not be done!", so I stripped it back to two:
 	* `ls -mt`
 	* what does this do? RTFM! = `man ls` and look for `-m`, `-t`
-* Start ex05
+* Start `ex05`
 	* Googled this…
 		* `git log -n 5` to get last 5 commits
 		* add on `--format="%H"` to print out only the hash
 		* create 2 line file `git_commit.sh`
 			* `#/bin/sh` as this is the convention for starting a shell script
 			* `git log -n 5 --format="%H"`
-* Start ex09
+* Start `ex09`
 	* Conversation in Discord got me interested… TIL that magic files even exist
 	* Read a bit about how to format magic file from man magic… noted about offset as the task is to create a file with the 42 string offset 42 bytes from start of file 
 	* While most magic files are more complex, the syntax _can_ be simple to search for a static string at a set offset
@@ -90,15 +91,17 @@
 			* first up: 41 because we start from 0!
 			* next `string` is a simple operator for magic files which just looks for a static string, in this case `42`
 			* last bit is whatever description you want to define for matching this rule!
-* Start ex08
-	* I've used `find` a bunch, but I didn't know you could use `-or` to apply different actions to different matches!
-		*  `find . -name "*~" -print -delete -or -name "#*#" -print -delete -or -name "#" -print -delete`
+* Start `ex08`
+	* I've used `find` a bunch, but I didn't know you could use `-or` to apply different actions to different matches! 
+		* *(Ed: I failed this one for missing the `-type f` initially! I will argue that the instructions are slightly ambiguous, but it does say "files"…)*
+		*  `find . -type f -name "*~" -print -delete -or -type f -name "#*#" -print -delete -or -type f -name "#" -print -delete`
 			* `-name` looks for a file matching a name, where * can be used as a wildcard to match anything (or nothing) in its place
 			* hence these patterns for 
 				* "ends in ~", 
 				* "starts and ends in #", 
 				* and the special edge case `#` which technically starts and ends with # but doesn't match `#*#` ;-)
 		* Tested by deleting a bunch of files matching those rules created with e.g. `touch "@~"` (using quotes around the special charactes we are searching for!)
+		* 
 * Start `ex07`
 	* Followed the ingo in the photo of the whiteboard that Martin wrote on, and `man patch`
 	* `patch` and `diff` can be used respectively to create `b` from `a` + `sw.diff` and `sw.diff` from `a` + `b` respectively
