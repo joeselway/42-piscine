@@ -99,15 +99,16 @@
 				* "starts and ends in #", 
 				* and the special edge case `#` which technically starts and ends with # but doesn't match `#*#` ;-)
 		* Tested by deleting a bunch of files matching those rules created with e.g. `touch "@~"` (using quotes around the special charactes we are searching for!)
-* Start ex07
+* Start `ex07`
 	* Followed the ingo in the photo of the whiteboard that Martin wrote on, and `man patch`
 	* `patch` and `diff` can be used respectively to create `b` from `a` + `sw.diff` and `sw.diff` from `a` + `b` respectively
 	* `a` and `sw.diff` are in the `resources.rar.gz` file on the project page on Intra!
-* Start ex06
-	* - the file names in the example are just arbitrary filenames for testing verbatim
-	* create a .gitignore containing those two file names
-	* touch two test files in your test git repo with the same names
-	* run git status --ignored -s to see your git status and include ignored files, in -short hand notation which prefixes hidden files with !!
+* Start `ex06`
+	* The file names to be ignored in the example (`.DS_Store` and `mywork.c~`) are just arbitrary filenames for testing with your Git ignore rules verbatim
+	* To be able to test your code in your environment…
+		* Create a .gitignore containing those two file names
+		* Touch two test files in your test git repo with the same names
+		* Run `git status --ignored -s` to see your git status and include ignored files, in -short hand notation which prefixes hidden files with !!
 	* pipe to grep "!!"
 	* ^^ this is a gotcha, because if you do this in a shell directly, you have to escape both ! or you get the "repeat my last command" shortcut from double bang
 BUT, in the .sh file, you can just do grep "!!" with no other escaples
