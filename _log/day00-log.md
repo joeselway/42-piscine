@@ -109,10 +109,15 @@
 		* Create a .gitignore containing those two file names
 		* Touch two test files in your test git repo with the same names
 		* Run `git status --ignored -s` to see your git status and include ignored files, in -short hand notation which prefixes hidden files with !!
-	* pipe to grep "!!"
-	* ^^ this is a gotcha, because if you do this in a shell directly, you have to escape both ! or you get the "repeat my last command" shortcut from double bang
-BUT, in the .sh file, you can just do grep "!!" with no other escaples
-	* once grepped down to the ignored files, pipe to cut -c4- to cut out the first 3 characters
+	* pipe to grep "!!" i.e. `git status --ignored -s | grep "!!"`
+		* ^^ This is a potential gotcha, because if you do this in a shell terminal directly, you have to escape both ! (i.e. `grep "\!\!"`) or you get the "repeat my last command" shortcut resulting from `!!`.
+			* BUT, in the .sh file, you can just do grep "!!" with no other escapes, and this is not an issue when you execute the script.
+			* **If you don't know what I'm talking about, Google and read up on "escaping special characters in shell"**
+	* Once you have grepped down to the lines containing the ignored files, pipe to `cut` to cut out the first 3 characters of each line
+		* `git status --ignored -s | grep "!!" | cut -c4-`
+		* As always…
+			* `man grep`
+			* `man cut`
 
 
 * Google how to clone existing local data to a remote Git repo
