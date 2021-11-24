@@ -103,6 +103,17 @@
 	* Followed the ingo in the photo of the whiteboard that Martin wrote on, and `man patch`
 	* `patch` and `diff` can be used respectively to create `b` from `a` + `sw.diff` and `sw.diff` from `a` + `b` respectively
 	* `a` and `sw.diff` are in the `resources.rar.gz` file on the project page on Intra!
+* Start ex06
+	* - the file names in the example are just arbitrary filenames for testing verbatim
+	* create a .gitignore containing those two file names
+	* touch two test files in your test git repo with the same names
+	* run git status --ignored -s to see your git status and include ignored files, in -short hand notation which prefixes hidden files with !!
+	* pipe to grep "!!"
+	* ^^ this is a gotcha, because if you do this in a shell directly, you have to escape both ! or you get the "repeat my last command" shortcut from double bang
+BUT, in the .sh file, you can just do grep "!!" with no other escaples
+	* once grepped down to the ignored files, pipe to cut -c4- to cut out the first 3 characters
+
+
 * Google how to clone existing local data to a remote Git repo
 	* Failed at this and just moved files into empty clone
 	* Maybe try this later… 
