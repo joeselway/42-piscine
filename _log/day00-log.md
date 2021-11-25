@@ -74,8 +74,13 @@
 		* `cat klist.txt` to make sure it containts the output of `klist`
 * Start `ex04`
 	* Stole another students answer - they used 4 flags for `ls` but the instructions state "What has not been asked for should not be done!", so I stripped it back to two:
+	* ***Hold up, wait a minute***
+		* This exercise is st00pid because… Moulinette will fail you unless you have all four…
+		* ls -mtUp 
 	* `ls -mt`
 	* what does this do? RTFM! = `man ls` and look for `-m`, `-t`
+		* …and `-U`, `-p`
+	* *(Ed: I'm neutral on needing to use -U for creation date, because the exercise doesn't specify WHAT TYPE OF date to sort by… But I think that the inclusion of `-p` is wrong according to the English wording of the exercise in the shell00 PDF.)
 * Start `ex05`
 	* Googled this…
 		* `git log -n 5` to get last 5 commits
