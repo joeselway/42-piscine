@@ -22,13 +22,3 @@ While row <= H (loop rows until max for H is reached)
 
 
 
-
-
-
-			if: (outer = 1 or V) & (inner = 1 or H)
-			do the circle
-		
-		…else:
-			do the dash
-
-	
