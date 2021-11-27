@@ -1,24 +1,31 @@
+----
 
-input("V":vertical iterations/columns, "H": horizontal interations/rows)
+Outer loop dictates the number of ROWS (HORIZONTAL INTERATIONS) or the VERTICAL LENGTH which = y
+
+Inner loop dictates the number of COLUMNS (VERTICAL INTERATIONS) for each ROW and the HORIZONTAL WIDTH which = x
+
+-----
+
+input("x":vertical iterations/columns, "y": horizontal interations/rows)
 
 
 outer loop: (# of rows, loop moves vertically down)
 
 	inner loop: (# of columns, loop prints horizontally)
 
-While row <= H (loop rows until max for H is reached)		
-	if row = (1 or H) (first or last)
-		while column <= V (print until max for V is reached)
+While y-counter <= y (loop columns until max for y is reached)					<------------ OUTER LOOP
+	if column = (1 or H) (first or last)
+		while column <= V (print until max for V is reached)			<------------ INNER LOOP A
 			if (column = 1 or V) (first or last)
 				print the o
 			else
 				print the -
 	else
-		while column <= V (print until max for V is reached)
+		while y-counter <= y (print until max for V is reached)					<------------	INNER LOOP B
 			if (column = 1 or V) (first or last)
 			 	print the |
 			else
-				do the nothing
+				do the spacebar
 
 
 
