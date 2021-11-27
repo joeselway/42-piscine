@@ -1,5 +1,5 @@
 
-input("V":vertical/columns, "H": horizontal/rows)
+input("V":vertical iterations/columns, "H": horizontal interations/rows)
 
 
 outer loop: (# of rows, loop moves vertically down)
