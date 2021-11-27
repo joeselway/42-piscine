@@ -1,0 +1,34 @@
+
+input("V":vertical/columns, "H": horizontal/rows)
+
+
+outer loop: (# of rows, loop moves vertically down)
+
+	inner loop: (# of columns, loop prints horizontally)
+
+While row <= H (loop rows until max for H is reached)		
+	if row = (1 or H) (first or last)
+		while column <= V (print until max for V is reached)
+			if (column = 1 or V) (first or last)
+				print the o
+			else
+				print the -
+	else
+		while column <= V (print until max for V is reached)
+			if (column = 1 or V) (first or last)
+			 	print the |
+			else
+				do the nothing
+
+
+
+
+
+
+			if: (outer = 1 or V) & (inner = 1 or H)
+			do the circle
+		
+		…else:
+			do the dash
+
+	
