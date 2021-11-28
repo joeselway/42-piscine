@@ -6,18 +6,18 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 22:53:26 by jselway           #+#    #+#             */
-/*   Updated: 2021/11/28 14:09:27 by jselway          ###   ########.fr       */
+/*   Updated: 2021/11/28 14:09:04 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_reverse_alphabet(void)
 {
 	char	letter;
 
-	letter = 97 - 1;
-	while (++letter <= 122)
+	letter = 122 + 1;
+	while (--letter >= 97)
 	{
 		write(1, &letter, 1);
 	}
