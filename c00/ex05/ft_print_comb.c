@@ -1,23 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/28 15:31:19 by jselway           #+#    #+#             */
-/*   Updated: 2021/11/28 15:31:32 by jselway          ###   ########.fr       */
+/*   Created: 2021/11/28 16:45:28 by jselway           #+#    #+#             */
+/*   Updated: 2021/11/28 18:22:44 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
-void	ft_print_numbers(void)
+void	ft_print_comb(void)
 {
-	char	letter;
+	char	abc[3];
 
-	letter = 48 - 1;
-	while (++letter <= 57)
+	abc[0] = '0' - 1;
+	while (++abc[0] <= '9')
 	{
-		write(1, &letter, 1);
+		abc[1] = abc[0] + 1 - 1;
+		while (++abc[1] <= '9')
+		{
+			abc[2] = abc[1] + 1 - 1;
+			while (++abc[2] <= '9')
+			{
+				write(1, &abc, 3);
+				if (abc[0] != '7')
+				{
+					write(1, ",", 1);
+					write(1, " ", 1);
+				}
+			}
+		}
 	}
 }
