@@ -6,27 +6,28 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 17:48:09 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/01 17:55:36 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/02 11:40:23 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include <stdio.h>
-
+*/
 int	ft_strlen(char *str)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
-	while(str[i])
+	while (str[i])
 	{
 		i++;
 	}
-	return i;
+	return (i);
 }
-
+/*
 int	main(void)
 {
-	int	n = ft_strlen("Long string is how long is a long string");
+	int	n = ft_strlen("1234567890123456789012345");
 	printf("The string is %d characters long", n);
-	return(0);
+	return (0);
 }
+*/
