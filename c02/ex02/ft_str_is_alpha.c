@@ -1,41 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/02 21:59:18 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 11:57:03 by jselway          ###   ########.fr       */
+/*   Created: 2021/12/06 12:27:00 by jselway           #+#    #+#             */
+/*   Updated: 2021/12/06 13:31:12 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+int	ft_str_is_alpha(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (src[i] && i < n)
+	while (*str)
 	{
-		dest[i] = src[i];
-		++i;
+		if (( *str < 65) || ((*str > 90) && (*str < 97)) || (*str > 122))
+			return (0);
+		str++;
 	}
-	while (i < n)
-	{
-		dest[i] = '\0';
-		++i;
-	}
-	return (dest);
+return (1);
 }
-/*
+
 #include <stdio.h>
 
 int	main(void)
 {
-	char *string = "12345678901234qwertyuiopasdfghjklzxcvbnm1234567890";
-	char new[50];
+	char *string = "a1";
 	printf("Original: %s\n", string);
-	char *copy = ft_strncpy(&new[0], &string[0], 12);
-	printf("Copy: %s\n", copy);
+	int res;
+	res = ft_str_is_alpha(string);
+	printf("Result is %d\n", res);
+	return (0);
 }
-*/
