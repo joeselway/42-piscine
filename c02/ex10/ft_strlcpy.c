@@ -1,35 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 12:27:00 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 13:57:49 by jselway          ###   ########.fr       */
+/*   Created: 2021/12/06 18:17:07 by jselway           #+#    #+#             */
+/*   Updated: 2021/12/06 18:28:08 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	while (*str)
-	{
-		if ((*str < 65) || ((*str > 90) && (*str < 97)) || (*str > 122))
-			return (0);
-		str++;
-	}
-	return (1);
-}
-/*
-#include <stdio.h>
+	int	i;
 
-int	main(void)
-{
-	char *string = "a1";
-	printf("Original: %s\n", string);
-	int res;
-	res = ft_str_is_alpha(string);
-	printf("Result is %d\n", res);
-	return (0);
+	i = 0;
+	while (src[i] && i < size - 1)
+	{
+		dest[i] = src[i];
+		i++
+	}
+	dest[i] = '\0';
+	return size;
 }
-*/
+

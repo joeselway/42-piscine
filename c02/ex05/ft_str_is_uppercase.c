@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 12:27:00 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 13:57:49 by jselway          ###   ########.fr       */
+/*   Created: 2021/12/06 13:55:25 by jselway           #+#    #+#             */
+/*   Updated: 2021/12/06 17:32:25 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_uppercase(char *str)
 {
 	while (*str)
 	{
-		if ((*str < 65) || ((*str > 90) && (*str < 97)) || (*str > 122))
+		if ((*str < 65) || (*str > 90))
 			return (0);
 		str++;
 	}
@@ -25,10 +25,10 @@ int	ft_str_is_alpha(char *str)
 
 int	main(void)
 {
-	char *string = "a1";
+	char *string = "";
 	printf("Original: %s\n", string);
 	int res;
-	res = ft_str_is_alpha(string);
+	res = ft_str_is_uppercase(string);
 	printf("Result is %d\n", res);
 	return (0);
 }
