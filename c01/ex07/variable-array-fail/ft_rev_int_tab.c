@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/02 15:46:41 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/02 16:03:03 by jselway          ###   ########.fr       */
+/*   Created: 2021/12/02 11:44:06 by jselway           #+#    #+#             */
+/*   Updated: 2021/12/02 12:26:04 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -15,14 +15,27 @@
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int	i;
-	int	swap;
+	int	position;
+	int	revtab[size];
 
-	i = 0;
-	while (i < (size / 2))
+	position = size - 1;
+	i = 0 - 1;
+	while (++i <= size)
 	{
-		swap = tab[i];
-		tab[i] = tab[size - i - 1];
-		tab[size - i - 1] = swap;
+		revtab[i] = tab[position];
+		position--;
+	}
+	i = 0;
+	while (i < size)
+	{
+		printf("%d, ", revtab[i]);
+		i++;
+	}	
+	printf("^^^ revtab array\n");
+	i = 0;
+	while (i < size)
+	{	
+		tab[i] = revtab[i];
 		i++;
 	}
 }
@@ -50,6 +63,6 @@ int	main(void)
 	{
 		printf("%d, ", array[i]);
 		i++;
-	}
+	}	
 }
 */

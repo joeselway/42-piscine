@@ -1,28 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/01 17:34:18 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/02 17:34:15 by jselway          ###   ########.fr       */
+/*   Created: 2021/12/02 17:40:15 by jselway           #+#    #+#             */
+/*   Updated: 2021/12/02 22:02:51 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+char	*ft_strcpy(char *dest, char *src)
 {
-	while (*str)
+	char	*c;
+
+	c = dest;
+	while (*src)
 	{
-		write(1, str, 1);
-		str++;
+		*c = *src;
+		c++;
+		src++;
 	}
+	return (dest);
 }
+
 /*
+
+#include <stdio.h>
+
 int	main(void)
 {
-	ft_putstr("Here is a string of wordzzzz");
+	char *string = "12345678901234qwertyuiopasdfghjklzxcvbnm1234567890";
+	char new[50];
+	printf("Original: %s\n", string);
+	char *copy = ft_strcpy(&new[0], &string[0]);
+	printf("Copy: %s\n", copy);
 }
+
 */
