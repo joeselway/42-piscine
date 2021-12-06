@@ -1,36 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
+/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 17:38:27 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 21:17:18 by jselway          ###   ########.fr       */
+/*   Created: 2021/12/06 20:58:49 by jselway           #+#    #+#             */
+/*   Updated: 2021/12/06 21:13:47 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcapitalize(char *str)
+#include <unistd.h>
+
+void	print_hex(int dec)
+{
+	char	*hex;
+
+	hex = "0123456789abcdef";
+	write(1, "\\", 1);
+	write(1, &hex[dec / 16], 1);
+	write(1, &hex[dec % 16], 1);
+}
+
+void	ft_putstr_non_printable(char *str)
 {
 	int	i;
 
-	if (str[0])
-		if (str[0] > 96 && str[0] < 123)
-			str[0] = str[0] - 32;
-	i = 1;
+	i = 0;
 	while (str[i])
 	{
-		if (str[i - 1] < 48
-			|| (str[i - 1] > 57 && str[i - 1] < 65)
-			|| (str[i - 1] > 90 && str[i - 1] < 97)
-			|| str[i - 1] > 122)
-		{
-			if (str[i] > 96 && str[i] < 123)
-					str[i] = str[i] - 32;
-		}
-		else if (str[i] >= 65 && str[i] <= 90)
-			str[i] = str[i] + 32;
+		if (str[i] < 32 || str[i] > 126)
+			print_hex(str[i]);
+		else
+			write(1, &str[i], 1);
 		i++;
 	}
-	return (str);
+}
+
+int	main(void)
+{
+	ft_putstr_non_printable("\a\b\f\0");
 }
