@@ -6,7 +6,7 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 13:56:00 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/07 15:55:22 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/07 19:21:28 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,18 @@ char	*ft_strcat(char *dest, char *src)
 	int	i;
 
 	dlen = 0;
-	i = 0;
 	while (dest[dlen])
 		dlen++;
-	while (src[i++])
-		dest[dlen + i - 1] = src[i];
-	return (dest);
+	
+	i = 0;
+	while (src[i])
+	{	
+		dest[dlen + i] = src[i];
+		i++;
+	}
+		return (dest);
 }
-/*
+
 #include <stdio.h>
 #include <strings.h>
 
@@ -39,4 +43,4 @@ int	main(void)
 	strcat(string3, string2);
 	printf("Result of    strcat: %s\n", string1);
 }
-*/
+
