@@ -6,7 +6,7 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 20:58:49 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 21:13:47 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/08 12:45:27 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,9 @@ void	ft_putstr_non_printable(char *str)
 		i++;
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_putstr_non_printable("\a\b\f\0");
 }
+*/
