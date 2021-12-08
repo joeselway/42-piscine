@@ -6,7 +6,7 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 21:55:42 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/07 15:41:03 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/08 18:35:10 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_strcmp(char *s1, char *s2)
 		i++;
 	return (s1[i] - s2[i]);
 }
-
+/*
 #include <stdio.h>
 #include <strings.h>
 
@@ -34,4 +34,4 @@ int	main(void)
 	printf("%d\n", strcmp(string1, string3));
 	printf("%d\n", strcmp("abcdefg", "abcdefz"));
 }
-
+*/
