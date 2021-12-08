@@ -6,18 +6,18 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 23:38:48 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/08 10:14:32 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/08 18:52:08 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(char *str)
 {
-	int n;
-	int	sign;	
+	int	n;
+	int	sign;
 
 	n = 0;
 	sign = 1;
-	while(*str <= 32)
+	while (*str <= 32)
 		str++;
 	while (*str == '-' || *str == '+')
 	{
@@ -34,11 +34,11 @@ int	ft_atoi(char *str)
 	n = n * sign;
 	return (n);
 }
-
-
+/*
 #include <stdio.h>
 
 int	main(void)
 {
 	printf("Result is: %d\n", ft_atoi("  +--++-28543sfhsa2"));
 }
+*/
