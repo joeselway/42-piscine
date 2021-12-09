@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/01 17:34:18 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/08 23:20:08 by jselway          ###   ########.fr       */
+/*   Created: 2021/12/08 22:58:44 by jselway           #+#    #+#             */
+/*   Updated: 2021/12/09 00:59:33 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_putstr(char *str)
 {
@@ -20,22 +25,9 @@ void	ft_putstr(char *str)
 		str++;
 	}
 }
-/*
-void	ft_putstr(char *str)
+
+int	main(int argc, char *argv[])
 {
-	int	i;
-	
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		i++
-	}
+	ft_putstr(argv[0]);
+	ft_putchar('\n');
 }
-*/
-/*
-int	main(void)
-{
-	ft_putstr("Here is a string of wordzzzz");
-}
-*/
