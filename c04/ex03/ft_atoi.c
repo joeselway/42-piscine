@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 23:38:48 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/08 18:52:08 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/09 15:59:07 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ int	ft_atoi(char *str)
 
 	n = 0;
 	sign = 1;
-	while (*str <= 32)
+	while (*str && (*str == ' ' || *str == '\t' || *str == '\n'
+			|| *str == '\v' || *str == '\f' || *str == '\r'))
 		str++;
 	while (*str == '-' || *str == '+')
 	{

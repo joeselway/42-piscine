@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 22:29:51 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/09 15:41:31 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/09 15:55:08 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	ft_putnbr(int nb)
 {
-	long int	nbl
+	long int	nbl;
 	int			div;
 	int			mod;
 	char		modchar;
-	
+
 	nbl = nb;
 	if (nbl < 0)
 	{
@@ -34,9 +34,9 @@ void	ft_putnbr(int nb)
 	modchar = mod + 48;
 	write(1, &modchar, 1);
 }
-
+/*
 int	main(void)
 {
-	ft_putnbr(-1234254987);
+	ft_putnbr(-2147483648);
 }
-
+*/
