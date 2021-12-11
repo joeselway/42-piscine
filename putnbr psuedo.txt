@@ -1,0 +1,60 @@
+
+
+ft_putnbr
+
+basic integer to character conversion
+
+
+
+4254
+  ||
+  |ones -> convert 4 to '4'
+  |     
+  tens -> convert '5 to 5'
+
+4254 / 10 =
+nb   / 10 =
+
+425
+
+4254 % 10 = 
+
+4
+------------
+
+425 / 10 =
+
+42
+
+425 % 10 = 
+
+5
+-------------
+
+42 / 10 =
+
+4
+
+42 % 10 = 
+
+2
+
+--------------
+
+4 / 10 = 
+
+0			<- stop condition when div result is 0
+	
+4 % 10 = 
+
+4
+
+---------------
+
+etc
+
+then print in the right order
+
+
+
+'0' - '9'
