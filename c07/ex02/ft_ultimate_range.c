@@ -6,12 +6,9 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 18:10:20 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/12 18:39:25 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/12 20:45:54 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
-#include <stdio.h>
 
 #include <stdlib.h>
 
@@ -26,19 +23,18 @@ int	ft_ultimate_range(int **range, int min, int max)
 		*range = 0;
 		return (0);
 	}
-printf("Malloc start…\n");
 	*range = malloc(sizeof(size) * size);
-printf("Malloc end…\n");
 	if (*range == 0)
 		return (-1);
+	i = 0;
 	while (i < size)
 	{
-		*range[i] = min + i;
+		(*range)[i] = min + i;
 		i++;
 	}
 	return (size);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -47,7 +43,7 @@ int	main(void)
 	int b;
 	int i;
 	int *range;
-	int **ptr = &range;
+	//int **ptr = &range;
 	int size;
 
 	a = -10;
@@ -56,7 +52,7 @@ int	main(void)
 
 	printf("Creating array from %d to %d, size should be %d\n", a, b, b - a);
 	printf("ft_ultimate_range start\n");
-	size  = ft_ultimate_range(ptr, a, b);
+	size  = ft_ultimate_range(&range, a, b);
 	printf("ft_ultimate_range done, size is %d\n", size);
 	while (i < size)
 	{
@@ -64,4 +60,4 @@ int	main(void)
 		i++;
 	}
 }
-
+*/
