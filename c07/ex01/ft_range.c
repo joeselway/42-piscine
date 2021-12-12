@@ -6,13 +6,13 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 17:41:22 by exam              #+#    #+#             */
-/*   Updated: 2021/12/10 18:09:41 by exam             ###   ########.fr       */
+/*   Updated: 2021/12/12 18:05:59 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	*ft_range(int start, int end)
+int	*ft_range(int min, int max)
 {
 	int i;
 	int p;
@@ -20,34 +20,23 @@ int	*ft_range(int start, int end)
 	int *ptr;
 
 	p = 0;
-	size = end - start;
+	size = max - min;
 	if (size < 0)
-		size*= -1;
-	size++;
+		return (0);
 	ptr = malloc(sizeof(i) * size);
-	if (start <= end)
+	if (min <= max)
 	{
-		i = start;
-		while (i <= end)
+		i = min;
+		while (i < max)
 		{
 			ptr[p] = i;
 			i++;
 			p++;	
 		}
 	}
-	else
-	{
-		i = start;
-		while (i >= end)
-		{
-			ptr[p] = i;
-			i--;
-			p++;
-		}
-	}
 	return (ptr);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -56,22 +45,21 @@ int	main(void)
 	int b;
 	int i;
 
-	a = -6660;
-	b = 0;
+	a = -10;
+	b = 25;
 	i = 0;
 	
 	int size = b - a;
 	if (size < 0)
 		size *= -1;
-	size++;
 	printf("Creating array from %d to %d, size is %d\n", a, b, size);
-	printf("ft_range start\n");
-	int *start = ft_range(a, b);
+	printf("ft_range min\n");
+	int *min = ft_range(a, b);
 	printf("ft_range done\n");
 	while (i < size)
 	{
-		printf("%d\n", start[i]);
+		printf("%d\n", min[i]);
 		i++;
 	}
 }
-
+*/
