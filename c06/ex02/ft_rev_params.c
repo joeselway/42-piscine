@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 01:00:45 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/09 01:06:34 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/12 15:56:44 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putstr(char *str)
 
 int	main(int argc, char *argv[])
 {
-	while (argc > 0)
+	while (argc > 1)
 	{
 		ft_putstr(argv[argc - 1]);
 		ft_putchar('\n');
