@@ -6,7 +6,7 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/11 14:48:48 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/12 11:49:16 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/12 15:44:19 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,18 @@ int	ft_sqrt(int nb)
 		return (i);
 	return (0);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
 {
-	int	i = 2;
+	int	i = 2147395599;
 	int r;
-	while (i++ <= 2147483647)
+	while (i < 2147483647)
 	{
 		r = ft_sqrt(i);
-		if (r > 0) 
-			(printf("The sqrt of %d is %d\n", i, r));
+		(printf("The sqrt of %d is %d\n", i, r));
+		i++;
 	}
 }
+*/
