@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 12:18:06 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/12 12:37:09 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/13 12:51:54 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 char	*ft_strdup(char *src)
 {
-	int i;
-	int	len;
-	char *copy;
+	int		i;
+	int		len;
+	char	*copy;
 
-	len  = 0;
+	len = 0;
 	i = 0;
 	if (!src[0])
 		return (0);
@@ -33,8 +33,7 @@ char	*ft_strdup(char *src)
 	copy[i] = 0;
 	return (copy);
 }
-
-
+/*
 #include <stdio.h>
 #include <strings.h>
 
@@ -50,5 +49,4 @@ int	main(void)
 	printf("Copy:     %s\n", copy);
 	printf("Address:  %p\n", copy);
 }
-
-
+*/

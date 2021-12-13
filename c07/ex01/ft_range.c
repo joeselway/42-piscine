@@ -6,7 +6,7 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 17:41:22 by exam              #+#    #+#             */
-/*   Updated: 2021/12/12 18:05:59 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/13 12:51:22 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	*ft_range(int min, int max)
 {
-	int i;
-	int p;
-	int size;
-	int *ptr;
+	int	i;
+	int	p;
+	int	size;
+	int	*ptr;
 
 	p = 0;
 	size = max - min;
@@ -31,7 +31,7 @@ int	*ft_range(int min, int max)
 		{
 			ptr[p] = i;
 			i++;
-			p++;	
+			p++;
 		}
 	}
 	return (ptr);
