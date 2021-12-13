@@ -20,3 +20,7 @@
 |c04     |  70% |  Up to ex03 | OK :) |
 |c05     |  50% |  Up to ex05 | OK :) |
 |c06     |  70% |  Up to ex02 | OK :) |
+|c07    | 0%  | ex00  | KO :(
+|       |     | ex01  | Timeout
+|       |     | ex02  | OK :)
+|       |     | ex03  | KO :(
