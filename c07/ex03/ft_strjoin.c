@@ -6,7 +6,7 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 20:53:35 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/13 13:47:55 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/14 00:01:12 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	*(++p) = '\0';
 	return (str);
 }		
-/*
+
 #include <stdio.h>
 
 int	main(void)
@@ -90,4 +90,4 @@ int	main(void)
 	printf("String 3 is: %s\n", str3);
 	printf("The big string is: %s\n", bigstring);
 }
-*/
+
