@@ -6,13 +6,13 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 23:55:15 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/12 23:55:25 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/13 14:14:40 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
-#define FT_ABS_H
+# define FT_ABS_H
 
-#define ABS(value) (value < 0 ? -value : value)
+# define ABS(value) (value < 0 ? -value : value)
 
 #endif
