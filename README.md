@@ -4,7 +4,7 @@
 
 *See you down in Arizona Bay*
 
-**Graded exercises:**
+**Graded projects:**
 |Project | Score| Exercises   | Result |
 |--------|------|-------------|--------|
 |shell00 |  60% | Up to ex07  | OK :)  |
