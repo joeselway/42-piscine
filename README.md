@@ -2,10 +2,10 @@
 
 
 
-See you down in Arizona bay
+*See you down in Arizona Bay*
 
 **Graded exercises:**
-
+|Project | Score| Exercises |
 |--------|------|---|
 |shell00 |  60% | Up to ex07 OK :)
 |        |      | ex08 KO :(
