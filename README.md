@@ -5,11 +5,11 @@
 *See you down in Arizona Bay*
 
 **Graded exercises:**
-|Project | Score| Exercises |
+|Project | Score| Exercises | Result |
 |--------|------|---|
-|shell00 |  60% | Up to ex07 OK :)
-|        |      | ex08 KO :(
-|        |      | ex09 OK :)
+|shell00 |  60% | Up to ex07  | OK :) |
+|        |      | ex08        | KO :( |
+|        |      | ex09        | OK :)
 |--------|------|---|        
 |shell01 | *40% | Up to ex06 OK - pending Moulinette grading issue for `MAC.sh`* |
 |--------|------|---|
