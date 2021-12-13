@@ -6,7 +6,7 @@
 
 **Graded projects:**
 |Project | Score| Exercises   | Result |
-|--------|------|-------------|--------|
+|--------|------|-------------------|--------|
 |shell00 |  60% | Up to ex07  | OK :)  |
 |        |      | ex08        | KO :(  |
 |        |      | ex09        | OK :)  |
