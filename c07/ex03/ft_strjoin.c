@@ -6,13 +6,9 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 20:53:35 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/12 21:48:19 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/13 13:47:55 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
-#include <stdio.h>
-
 
 #include <stdlib.h>
 
@@ -23,7 +19,7 @@ int	calc_size(int size, char **strs, char *sep)
 	int	i;
 
 	sep_size = 0;
-	while(sep[sep_size])
+	while (sep[sep_size])
 		sep_size++;
 	total_size = 1;
 	if (size > 1)
@@ -36,17 +32,19 @@ int	calc_size(int size, char **strs, char *sep)
 		total_size += i;
 		size--;
 	}
-	printf("Returning size: %d\n", total_size);
 	return (total_size);
 }
 
 char	*add_string(char *src, char *dst)
 {
-	int i;
+	int	i;
 
-	i = -1;
-	while(src[i++])
+	i = 0;
+	while (src[i])
+	{
 		dst[i] = src[i];
+		i++;
+	}
 	return (&dst[i]);
 }
 
@@ -65,37 +63,31 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	}
 	str = (char *)malloc(sizeof(c) * calc_size(size, strs, sep));
 	i = 0;
-	printf("Adding first string \"%s\" at %p to %p\n", strs[i], strs[i], str);
 	p = add_string(strs[0], str);
 	while (++i < size)
 	{
-
-		printf("The big string is: %s\n", str);
-		printf("Adding seperator at %p to %p\n", sep, p);
 		p = add_string(sep, p);
-		printf("Adding string \"%s\" at %p to %p\n", strs[i], strs[i], p);
 		p = add_string(strs[i], p);
 	}
-
-	printf("The final big string is: %s\n", str);
 	*(++p) = '\0';
-	printf("The final terminated big string is: %s\n", str);
 	return (str);
 }		
-
+/*
 #include <stdio.h>
 
 int	main(void)
 {
-	char str1[] = "1234567890";
-	char str2[] = "asdfghjkl;";
-	char str3[] = "0987654321";
+	char str1[] = "123890";
+	char str2[] = "asdkl;";
+	char str3[] = "098321";
 	char sep[] = "--";
 
 	char *strs[3] = { str1, str2, str3 };
 	char *bigstring = ft_strjoin(3, strs, sep);
+	//free(bigstring);
 	printf("String 1 is: %s\n", str1);
 	printf("String 2 is: %s\n", str2);
 	printf("String 3 is: %s\n", str3);
 	printf("The big string is: %s\n", bigstring);
 }
+*/
