@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_boolean.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
+/*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 23:31:50 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/13 14:24:52 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/13 21:52:38 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BOOLEAN_H
-# define BOOLEAN_H
+#ifndef FT_BOOLEAN_H
+# define FT_BOOLEAN_H
 
 # include <unistd.h>
 
