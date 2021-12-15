@@ -6,7 +6,7 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 17:41:22 by exam              #+#    #+#             */
-/*   Updated: 2021/12/12 22:13:06 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/13 23:56:55 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,28 +15,22 @@
 int	*ft_range(int min, int max)
 {
 	int	i;
-	int	p;
 	int	size;
 	int	*ptr;
 
-	p = 0;
+	if (min >= max)
+		return (NULL);
 	size = max - min;
-	if (size < 0)
-		return (0);
 	ptr = malloc(sizeof(i) * size);
-	if (min <= max)
+	i = 0;
+	while (i < size)
 	{
-		i = min;
-		while (i < max)
-		{
-			ptr[p] = i;
-			i++;
-			p++;
-		}
+		ptr[i] = min + i;
+		i++;
 	}
 	return (ptr);
 }
-/*
+
 #include <stdio.h>
 
 int	main(void)
@@ -45,8 +39,8 @@ int	main(void)
 	int b;
 	int i;
 
-	a = -10;
-	b = 25;
+	a = 495;
+	b = 555;
 	i = 0;
 	
 	int size = b - a;
@@ -62,4 +56,4 @@ int	main(void)
 		i++;
 	}
 }
-*/
+
