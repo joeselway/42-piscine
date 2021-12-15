@@ -6,7 +6,7 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 17:41:22 by exam              #+#    #+#             */
-/*   Updated: 2021/12/13 23:56:55 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/15 14:45:19 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	*ft_range(int min, int max)
 	}
 	return (ptr);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -56,4 +56,4 @@ int	main(void)
 		i++;
 	}
 }
-
+*/

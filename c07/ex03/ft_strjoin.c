@@ -6,7 +6,7 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 20:53:35 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/14 00:01:12 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/15 14:44:35 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 		return (str);
 	}
 	str = (char *)malloc(sizeof(c) * calc_size(size, strs, sep));
+	printf("Size allocated is %d\n", calc_size(size, strs, sep));
 	i = 0;
 	p = add_string(strs[0], str);
 	while (++i < size)
@@ -69,18 +70,19 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 		p = add_string(sep, p);
 		p = add_string(strs[i], p);
 	}
-	*(++p) = '\0';
+	*p = '\0';
 	return (str);
 }		
-
+/*
+#include <unistd.h>
 #include <stdio.h>
 
 int	main(void)
 {
-	char str1[] = "123890";
-	char str2[] = "asdkl;";
-	char str3[] = "098321";
-	char sep[] = "--";
+	char str1[] = "12389dfadsgfaew";
+	char str2[] = "asdklfdherher";
+	char str3[] = "09832zzzzzzz";
+	char sep[] = "---==";
 
 	char *strs[3] = { str1, str2, str3 };
 	char *bigstring = ft_strjoin(3, strs, sep);
@@ -88,6 +90,12 @@ int	main(void)
 	printf("String 1 is: %s\n", str1);
 	printf("String 2 is: %s\n", str2);
 	printf("String 3 is: %s\n", str3);
-	printf("The big string is: %s\n", bigstring);
+	while (*bigstring)
+	{
+		write(1, bigstring, 1);
+		bigstring++;
+	}
+	write(1, "\n", 1);
+	//printf("The big string is: %s\n", bigstring);
 }
-
+*/
