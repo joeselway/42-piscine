@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 16:08:40 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/16 16:35:32 by jselway          ###   ########.fr       */
+/*   Updated: 2021/12/16 16:37:24 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	main(int argc, char **argv)
 	}
 
 	i = 0;
-	while (argv[1][i]) // Do a putstr on argv[1] 
+	while (argv[argc - 1][i]) // Do a putstr on last argument, index is argc - 1 
 	{
 		write(1, &argv[argc - 1][i], 1);
 		i++;
