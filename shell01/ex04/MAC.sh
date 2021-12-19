@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ifconfig | grep ether | cut -d " " -f 2
+ifconfig | grep ether | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}'
